@@ -1,0 +1,5 @@
+# Specific for Stable / Windows / Pip / Python / CPU (No CUDA)
+torch 
+torchvision 
+torchaudio
+
