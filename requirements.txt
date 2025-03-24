@@ -3,3 +3,5 @@ torch
 torchvision 
 torchaudio
 
+# git_https://github.com/ultralytics/ultralytics.git@main
+ultralytics

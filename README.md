@@ -16,6 +16,10 @@ Using git From your preferred workspace, open a CMD (or Powershell) terminal and
 ```
 git clone https://github.com/poivronjaune/yolo_project01.git
 ```
+To update with latest version, but this will cause conflicts if you changed the code without use a new branch
+```
+git pull
+```
 
 
 # Setup python
@@ -54,7 +58,22 @@ Test Tensor created: tensor([1., 2., 3.])
 If you get some message like this, something went wrong. Do not continue and find a way to fix your installation:  
 >ModuleNotFoundError: No module named 'torch'
 
-### To Investigate
+## Detect objects (test01)  
+If all the setup steps have been run succesfully, you should be able ti run test01.py. This will generate a result01.jpg file with bounding boxes on detected objects.  
+  
+Optinal step: activate your python virtual environment (note required if you ran all the setup steps)  
+```
+env\Scripts\Activate
+```
+Run the test01.py python script, make sure image01.jpg is in the folder ".\\images\\..."  
+```
+py test01.py
+```  
+You should get a file named result01.jpg in the project's root folder that looks like this:  
+<img src="images/result01.jpg" alt="result01.jpg" width="200"/>
+
+#
+# To Investigate
 - How to run using Python 3.13?
 - Why do we need the windows C/C++ Compiler, is it possible to have an already compiled component?
 - Let'S try to use git without largefile support? [Git Large File Support Link](https://git-lfs.com)
