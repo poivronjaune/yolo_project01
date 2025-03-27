@@ -72,14 +72,14 @@ py test01.py
 You should get a file named result01.jpg in the project's root folder that looks like this:  
 <img src="images/result01.jpg" alt="result01.jpg" width="200"/>
 
-## Show which Objects the model will detect  
+## 4 - Show which Objects the model will detect  
 The model downloaded was trained to recognize specific objects (yolo11n.pt) has a small set of objects it can detect.  
 To show the list run:
 ```
 py show_objects.py
 ```
 
-## Stop when object is detected (Webcam)
+## 5 - Stop when object is detected (Webcam)
 The python script webcam.py will be a stream input to our model.  
 The script will display the camera on screen with detected objects.
 Pass a "tv remote" in front of the camera and the script will stop.  
