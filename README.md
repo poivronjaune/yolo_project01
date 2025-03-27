@@ -4,7 +4,7 @@
 > **⚠️ Work in Progress:** This project is currently under development. Features, functionality, and documentation may change frequently. Thank you for your patience!
 
 [![Work in Progress](https://img.shields.io/badge/status-in_progress-yellow)](https://github.com/poivronjaune/BHTP-Tools)
-![Last Commit](https://img.shields.io/github/last-commit/poivronjaune/BHTP-Tools)
+![Last Commit](https://img.shields.io/github/last-commit/poivronjaune/yolo_project01)
 
 ---
 Trials and Tribulations of machine learning and object detection in Python  
