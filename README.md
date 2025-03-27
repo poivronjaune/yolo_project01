@@ -22,7 +22,7 @@ git pull
 ```
 
 
-# Setup python
+# 1 - Setup python
 - Create a python virtual environment with a specific python version (the python version must already be installed on your computer)    
 ```
 py -3.12 -m venv env
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 Notes: this part is complicated if it does not work directly from the pip command. See the [pytorch official website](https://pytorch.org/) for other installation methods
 
-## Test pytorch installed  
+## 2 - Test pytorch installed  
 Run the following python script to test if your installation of pytorch and the virtual environment was succesful  
 ```
 py .\torchinstalled.py
@@ -58,7 +58,7 @@ Test Tensor created: tensor([1., 2., 3.])
 If you get some message like this, something went wrong. Do not continue and find a way to fix your installation:  
 >ModuleNotFoundError: No module named 'torch'
 
-## Detect objects (test01)  
+## 3 - Detect objects on image    
 If all the setup steps have been run succesfully, you should be able ti run test01.py. This will generate a result01.jpg file with bounding boxes on detected objects.  
   
 Optinal step: activate your python virtual environment (note required if you ran all the setup steps)  
@@ -71,6 +71,23 @@ py test01.py
 ```  
 You should get a file named result01.jpg in the project's root folder that looks like this:  
 <img src="images/result01.jpg" alt="result01.jpg" width="200"/>
+
+## Show which Objects the model will detect  
+The model downloaded was trained to recognize specific objects (yolo11n.pt) has a small set of objects it can detect.  
+To show the list run:
+```
+py show_objects.py
+```
+
+## Stop when object is detected (Webcam)
+The python script webcam.py will be a stream input to our model.  
+The script will display the camera on screen with detected objects.
+Pass a "tv remote" in front of the camera and the script will stop.  
+That's it we detected an object and reacted to it.
+```
+py webcam.py
+```
+
 
 #
 # To Investigate
