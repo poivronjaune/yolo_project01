@@ -9,6 +9,9 @@
 ---
 Trials and Tribulations of machine learning and object detection in Python  
 
+
+[Wiki](https://github.com/poivronjaune/yolo_project01/wiki)  
+
 # Download project  
 Your can download the zip file from this repository and unzip it on your computer  
 **OR**  
