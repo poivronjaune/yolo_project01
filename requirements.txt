@@ -1,0 +1,7 @@
+# Specific for Stable / Windows / Pip / Python / CPU (No CUDA)
+torch 
+torchvision 
+torchaudio
+
+# git_https://github.com/ultralytics/ultralytics.git@main
+ultralytics
