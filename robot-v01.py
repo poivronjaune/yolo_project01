@@ -5,6 +5,9 @@ import platform
 from ultralytics import YOLO
 
 
+ip_camera = 'rtsp://thingino:thingino@192.168.0.237:554/ch1'
+
+
 # Function to beep
 def beep():
     if platform.system() == "Windows":
@@ -61,7 +64,7 @@ print(class_names)
 frame_interval = 5
 
 # Run YOLO on the webcam (source=0 for default camera; change if needed)
-results = model.predict(source=0, stream=True, conf=0.6, vid_stride=frame_interval, verbose=False)
+results = model.predict(source=ip_camera, stream=True, conf=0.6, vid_stride=frame_interval, verbose=False)
 
 # loop over GENERATOR (infinite array of frames) provided by stream=True
 for res in results:
